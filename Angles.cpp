@@ -1,8 +1,6 @@
 #include <cmath>
 #include "Angles.hpp"
 
-using namespace Graph_lib;
-
 double deg_to_rad(double ang) {
   return ang * M_PI / 180;
 }
