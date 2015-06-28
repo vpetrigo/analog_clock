@@ -1,8 +1,6 @@
-#include <utility>
-#include <cmath>
-#include <ctime>
 #include "Window.h"
 #include "GUI.h"
+#include "Analog_dial.hpp"
 
 using namespace std;
 using namespace Graph_lib;
@@ -19,10 +17,10 @@ int main() {
   Graph_lib::Window win {xy, window_w, window_h, "Test"};
     
   Analog_Dial ac {clock_xy, dial_rad};
-  Clocks c{clock_xy, arrow_rad};
+  //  Clocks c{clock_xy, arrow_rad};
   
   win.attach(ac);
-  win.attach(c);
+  //win.attach(c);
   
   gui_main();
   
