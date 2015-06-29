@@ -1,13 +1,13 @@
 cmake_minimum_required (VERSION 3.1)
 
-set(CMAKE_CXX_COMPILER clang++-3.7)
+set(CMAKE_CXX_COMPILER g++)
 
 project(Analog_Clock)
 
 include_directories("../../GUI")
 link_directories("../../GUI/lib")
 
-set(CMAKE_CXX_LINK_EXECUTABLE "${CMAKE_CXX_LINK_EXECUTABLE} -ldl")
+#set(CMAKE_CXX_LINK_EXECUTABLE "${CMAKE_CXX_LINK_EXECUTABLE} -ldl")
 
 find_package(FLTK REQUIRED)
 include_directories("${FLTK_INCLUDE_DIR}")
